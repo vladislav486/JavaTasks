@@ -16,7 +16,9 @@ public class OptionalTask3 {
             for (int j = 0; j < arrayOfRandomNumbers.length; j++){
                 arrayOfRandomNumbers[i] [j] = random.nextInt();
             }
-        } int maxNumberOfMatrix = arrayOfRandomNumbers[0] [0];
+        }
+        int maxNumberOfMatrix = arrayOfRandomNumbers[0] [0];
+        
         for (int i = 0; i < arrayOfRandomNumbers.length; i++) {
             for (int j = 0; j < arrayOfRandomNumbers.length; j++) {
                 if(maxNumberOfMatrix < arrayOfRandomNumbers[i] [j]){
