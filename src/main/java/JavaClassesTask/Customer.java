@@ -7,6 +7,13 @@ public class Customer implements Comparable <Customer> {
     public String address;
     private int id;
     public int cardNum, bankNum;
+    
+    public Customer(String firstName, String lastName, String surname, String address){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.surname = surname;
+        this.address = address;
+    }
 
     public int getId() {
         return id;
@@ -30,13 +37,6 @@ public class Customer implements Comparable <Customer> {
 
     public void setBankNum(int bankNum) {
         this.bankNum = bankNum;
-    }
-
-    public Customer(String firstName, String lastName, String surname, String address){
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.surname = surname;
-        this.address = address;
     }
 
     @Override
